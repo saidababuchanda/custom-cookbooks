@@ -8,9 +8,7 @@ package 'newrelic-sysmond' do
   action :upgrade
 end
 
-execute 'install-newrelic-license' do
-  command "nrsysmond-config --set license_key=#{node['newrelic']['license_key']}"
-end
+
 
 service "newrelic-sysmond" do
   action :start
