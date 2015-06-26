@@ -7,5 +7,5 @@ template "/tmp/my_template.txt" do
   group 'root'
   variables({
      :my_test => node[:deploy]['test'][:environment_variables][:MY_TEST]}
-  })
+  )
 end
